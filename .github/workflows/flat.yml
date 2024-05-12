@@ -19,30 +19,30 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.shazam.com/shazam/v3/en-US/US/web/-/tracks/world-chart-world?pageSize=200&startFrom=0
-          downloaded_filename: world-top200.json
+          http_url: https://www.shazam.com/services/charts/csv/top-200/world
+          downloaded_filename: world-top200.csv
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.shazam.com/shazam/v3/en-US/US/web/-/tracks/ip-country-chart-US?pageSize=200&startFrom=0
-          downloaded_filename: usa-US-top200.json
+          http_url: https://www.shazam.com/services/charts/csv/top-200/united-states
+          downloaded_filename: usa-top200.csv
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.shazam.com/shazam/v3/en-US/US/web/-/tracks/ip-city-chart-5105496?pageSize=200&startFrom=0
-          downloaded_filename: trenton-5105496-top200.json
+          http_url: https://www.shazam.com/services/charts/csv/top-50/united-states/newark
+          downloaded_filename: newark-top50.csv
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.shazam.com/shazam/v3/en-US/US/web/-/tracks/ip-country-chart-IN?pageSize=200&startFrom=0
-          downloaded_filename: india-IN-top200.json
+          http_url: https://www.shazam.com/services/charts/csv/top-200/india
+          downloaded_filename: india-top200.csv
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.shazam.com/shazam/v3/en-US/US/web/-/tracks/risers-country-chart-US?pageSize=20&startFrom=0
-          downloaded_filename: usa-US-rising.json
+          http_url: https://www.shazam.com/services/charts/csv/discovery/united-states
+          downloaded_filename: usa-discovery.json
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.shazam.com/shazam/v3/en-US/US/web/-/tracks/risers-country-chart-IN?pageSize=20&startFrom=0
-          downloaded_filename: india-IN-rising.json
+          http_url: https://www.shazam.com/services/charts/csv/discovery/india
+          downloaded_filename: india-discovery.json
