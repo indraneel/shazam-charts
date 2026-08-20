@@ -1,0 +1,7 @@
+# Python bytecode — build_rundown.py is importable, so analysis scripts create these
+__pycache__/
+*.py[cod]
+
+# Node, if a browser-test harness is installed for verification
+node_modules/
+package-lock.json
